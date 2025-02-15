@@ -125,4 +125,8 @@ def draw_castle():
     done()
 
 # გაშვების ბრძანება რომ სასახლე დაიხაზოს
+<<<<<<< HEAD
 draw_castle()
+=======
+draw_castle()
+>>>>>>> 07ccc6af43e8bc38e849c95ef299cb32896120f3
