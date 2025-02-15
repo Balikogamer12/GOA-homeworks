@@ -20,16 +20,16 @@ def draw_tower(x, y, width, height):
         draw_rectangle(x + i * (width / 3), y + height, width / 3, width / 3)
 
 def draw_wall():
-    draw_rectangle(-250, -100, 500, 200)  # Main castle wall
+    draw_rectangle(-250, -100, 500, 200)  # მთავარი სასახლის კედელი
 
 def draw_arch(x, y, width, height):
-    # Draw the rectangular body of the door
+    # დავხაზოთ კარის მართკუთხა სხეული
     draw_rectangle(x, y, width, height, "gray")
     
-    # Now draw the arch
+    # ახლა დავხაზოთ თაღი
     penup()
-    goto(x + width / 2, y + height)  # Start at the top center of the door
-    setheading(90)  # Set the heading to face upwards
+    goto(x + width / 2, y + height)  #  კარის ზედა ცენტრიდან დაწყება
+    setheading(90)  # დააყენეთ სათაური ზევით
     pendown()
     
     # Draw the top half of the arch (curved top)
@@ -50,7 +50,7 @@ def draw_gate():
     end_fill()
 
 def draw_window(x, y, width, height):
-    # Draw the window frame with a decorative color (dark blue)
+    # Draw the window frame with a decorative color (black)
     draw_rectangle(x, y, width, height, "black")
 
     # Draw window panes (cross bars)
@@ -98,24 +98,24 @@ def draw_castle():
     width(7)
     bgcolor("lightblue")
     
-    # Draw left tower
+    # დავხაზოთ მარცხენა კოშკი
     draw_tower(-250, -100, 80, 200)
     draw_roof(-210, 134, 100)
     
-    # Draw right tower
+    # დავხაზოთ მარჯვენა კოშკი
     draw_tower(170, -100, 80, 200)
     draw_roof(210, 134, 100)
     
-    # Draw main wall
+    # დავხაზოთ მთავარი კედელი
     draw_wall()
     
-    # Draw main roof
+    # დავხაზოთ მარცხენა სახურავი
     draw_roof(-5, 100, 160)
 
-    # Draw the castle gate (door) with arch
+    # ციხის კარიბჭის (კარის) დახატვა თაღით
     draw_gate()
   
-    # Draw windows (with crossbars)
+    # ფანჯრების დახატვა (ჯვარედინი ზოლებით)
     draw_window(-210, -30, 40, 60)  # Left window
     draw_window(190, -30, 40, 60)   # Right window
     draw_window(-60, 30, 40, 60)    # Top-left window
@@ -124,5 +124,5 @@ def draw_castle():
     hideturtle()
     done()
 
-# Run the function to draw the castle
+# გაშვების ბრძანება რომ სასახლე დაიხაზოს
 draw_castle()
