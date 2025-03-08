@@ -1,0 +1,12 @@
+რას გამოიტანს შემდეგი კოდი და რატომ:
+number1 = 10
+number2 = 20
+sum_of_numbers = number1 + number2
+print(sum_Of_numbers)
+
+--------------------------------------------------------------------------
+
+answer: 
+კოდი გამოიტანს შეცდომას (NameError), რადგან print(sum_Of_numbers)-ში შეცდომით არის გამოყენებული sum_Of_numbers, 
+მაგრამ კოდში არსებული ცვლადი არის sum_of_numbers. Python არის case-sensitive ენა,
+ ამიტომ sum_of_numbers და sum_Of_numbers სხვადასხვა ცვლადებად ითვლება.
