@@ -1,6 +1,0 @@
-word1 = input("თქვენი პირადი ნომერი: ")
-word2 = input("თქვენი ტელეფონის ნომერი: ")
-private_number = ("პირადი ნომერი: ")
-phone_number = ("ტელეფონის ნომერი: ")
-concatenated = private_number + word1 + " " + phone_number + word2  # სიტყვების გაერთიანება (კონკატენაცია)
-print("შედეგი:", concatenated)
