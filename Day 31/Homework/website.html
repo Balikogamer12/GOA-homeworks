@@ -1,0 +1,8 @@
+<video id="v" width="300" autoplay muted>
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+</video>
+
+<br>
+<button onclick="v.requestFullscreen()">გადიდება</button>
+<button onclick="v.muted = !v.muted">ხმის ჩართვა/გამორთვა</button>
+<button onclick="v.paused ? v.play() : v.pause()">დაკვრა/შეჩერება</button>
